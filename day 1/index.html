@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Web Game Hub</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-black">
+    <div class="container">
+      <span class="navbar-brand">🎮 My Web Game Journey</span>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container mt-5">
+
+    <!-- GAME CARDS -->
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light">
+          <div class="card-body text-center">
+            <h5 class="card-title">Click Game</h5>
+            <p class="card-text">Increase your score</p>
+            <button class="btn btn-warning" onclick="showGame()">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAME AREA -->
+    <div id="gameArea" class="text-center d-none">
+      <h2>🕹 Click Counter Game</h2>
+      <h1 id="score" class="display-1">0</h1>
+
+      <button class="btn btn-primary btn-lg m-2" onclick="increaseScore()">
+        CLICK ME
+      </button>
+
+      <button class="btn btn-danger m-2" onclick="resetScore()">
+        Reset
+      </button>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
