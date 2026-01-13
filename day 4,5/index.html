@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reaction Time Game</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+
+<nav class="navbar navbar-dark bg-black">
+  <div class="container">
+    <span class="navbar-brand">⚡ Reaction Time Game</span>
+  </div>
+</nav>
+
+<div class="container text-center mt-5">
+
+  <h2 id="statusText">Wait for green...</h2>
+
+  <!-- GAME BOX -->
+  <div id="gameBox" class="game-box bg-danger mt-4"></div>
+
+  <!-- RESULT -->
+  <h3 class="mt-4" id="result"></h3>
+
+  <!-- BUTTON -->
+  <button class="btn btn-warning mt-3" onclick="startGame()">Start Game</button>
+
+  <!-- SCORE HISTORY -->
+  <div class="mt-4">
+    <h4>Previous Scores (ms)</h4>
+    <ul id="scoreList" class="list-group"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
